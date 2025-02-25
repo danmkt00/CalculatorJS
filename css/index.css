@@ -6,7 +6,74 @@
     box-sizing: border-box;
 }
 
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #565454;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #a79292;
+    display: flex;
+    width: 260px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    height: 50px;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    padding: 20px; /* Add space inside */
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row-container {
+    display: contents;
+}
+
+.backspace {
+    grid-column: span 2;
 }
